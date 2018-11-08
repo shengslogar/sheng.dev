@@ -137,10 +137,6 @@
                 color: #222;
             }
 
-            #hubspot-messages-iframe-container {
-                margin: 20px;
-            }
-
             @media screen and (max-width: 768px) {
                 html {
                     font-size: 16px;
@@ -167,10 +163,16 @@
                 #hero__title {
                     font-size: 62px;
                 }
-                
-                #hubspot-messages-iframe-container {
-                    margin: 5px;
-                }
+            }
+            
+            
+            #hubspot-messages-iframe-container {
+                margin: 20px;
+            }
+            
+            /* not proud of this, this is how hubspot works */
+            body.is-ua-mobile #hubspot-messages-iframe-container {
+                margin: 0;
             }
         </style>
     </head>
@@ -191,6 +193,7 @@
         <script id="hs-script-loader" async src="//js.hs-scripts.com/5021877.js"></script>
         <script async src="//www.googletagmanager.com/gtag/js?id=UA-38963765-4"></script>
         <script>
+            // ga
             window.dataLayer = window.dataLayer || [];
 
             function gtag() {
@@ -199,6 +202,11 @@
 
             gtag('js', new Date());
             gtag('config', 'UA-38963765-4');
+            
+            // custom
+            if (window.navigator.userAgent.toLowerCase().indexOf('mobile') !== -1) {
+                document.body.classList.add('is-ua-mobile');
+            }
         </script>
     </body>
 </html>
