@@ -34,33 +34,52 @@ noscript {
   padding         : 2rem;
 }
 
-@keyframes wf-loader--infinite {
-  40% {
-    transform : translateY(2rem);
+@keyframes wf-loader__after--entrance {
+  from {
+    opacity : 0;
+  }
+}
+
+@keyframes wf-loader__after--infinite {
+  46% {
+    transform : translateY(1.25rem);
   }
 }
 
 #wf-loader {
-  position       : fixed;
-  border-radius  : 50%;
-  top            : 0;
-  left           : 0;
-  right          : 0;
-  bottom         : 0;
-  margin         : auto;
-  width          : 6px;
-  height         : 6px;
-  background     : #444444;
-  z-index        : 10;
-  pointer-events : none;
-  transition     : .5s ease;
-  animation      : wf-loader--infinite .75s ease infinite;
+  position            : fixed;
+  top                 : 0;
+  left                : 0;
+  right               : 0;
+  bottom              : 0;
+  margin              : auto;
+  width               : 6px;
+  height              : 6px;
+  z-index             : 10;
+  pointer-events      : none;
+  transition          : .4s ease;
+  transition-property : opacity, left, visibility;
+}
+
+/* Chrome seems to glitch out if the load happens super fast on the parent element, pseudo does the trick 💪 */
+#wf-loader::after {
+  content       : "";
+  border-radius : 50%;
+  width         : 100%;
+  height        : 100%;
+  display       : block;
+  background    : #444444;
+  transform     : translateY(-.25rem);
+  animation     : wf-loader__after--entrance 1s ease .25s backwards, wf-loader__after--infinite .75s ease infinite;
 }
 
 html.wf-active #wf-loader {
-  visibility           : hidden;
-  opacity              : 0;
-  left                 : 75%;
+  visibility : hidden;
+  opacity    : 0;
+  left       : 80%;
+}
+
+html.wf-active #wf-loader::after {
   animation-play-state : paused;
 }
 
