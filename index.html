@@ -1,212 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>SHENG SLOGAR | New York</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="description" content="Sheng-Liang Slogar official online profile. Web development from New York.">
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat|Noto+Sans">
-        <style type="text/css">
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                transition: .2s ease;
-                transition-property: color, background-color;
-            }
-
-            html {
-                font: 18px 'Noto Sans', sans-serif;
-                cursor: default;
-                user-select: none;
-                height: 100%;
-            }
-
-            body {
-                font-size: 0;
-                height: 100%;
-                min-width: 320px;
-                min-height: 500px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            @keyframes hero--entrance {
-                from {
-                    opacity: 0;
-                    transform: scale(.96);
-                }
-            }
-
-            @keyframes hero__title--entrance {
-                from {
-                    letter-spacing: 0px;
-                }
-            }
-
-            #hero {
-                padding: 50px;
-                color: #222;
-                background: #f5f5f5;
-                border: 20px solid #fff;
-                position: relative;
-                white-space: nowrap;
-                animation: hero--entrance 1s ease;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                flex-direction: column;
-            }
-
-            #hero__action:before {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 0%;
-                background: #222;
-                transition: .2s ease;
-                transition-property: border-radius, height;
-                z-index: 0;
-
-                border-radius: 100% 100% 0 0;
-            }
-
-            #hero__action {
-                border: 2px solid #222;
-                padding: 8px 0;
-                display: inline-block;
-                position: absolute;
-                top: 30px;
-                right: 40px;
-                width: 100px;
-                text-align: center;
-                color: #222;
-                text-decoration: none;
-                font-size: .9rem;
-                z-index: 1;
-                overflow: hidden;
-                border-radius: 2px;
-                transition-duration: .3s;
-                transition-property: color, border-radius;
-            }
-
-            #hero__action::after {
-                content: 'hire';
-                position: relative;
-                z-index: 1;
-            }
-
-            #hero__action:hover {
-                color: #fff;
-                border-radius: 30px;
-            }
-
-            #hero__action:hover::before {
-                height: 100%;
-                border-radius: 0;
-            }
-
-            #hero__title {
-                font-size: 120px;
-                font-family: 'Montserrat', serif;
-                letter-spacing: 10px;
-                font-weight: 800;
-                padding: 10px 0;
-                text-transform: uppercase;
-                animation: hero__title--entrance 1s ease;
-            }
-
-            #hero__links {
-                border-top: 2px dotted #ddd;
-                padding-top: 20px;
-                font-size: 1rem;
-            }
-
-            #hero__links a {
-                display: inline-block;
-                color: #aaa;
-                margin: 0 10px;
-                text-decoration: none;
-            }
-
-            #hero__links a:hover {
-                color: #222;
-            }
-
-            @media screen and (max-width: 768px) {
-                html {
-                    font-size: 16px;
-                }
-
-                #hero__title {
-                    font-size: 90px;
-                    letter-spacing: 8px;
-                }
-            }
-
-            @media screen and (max-width: 480px) {
-                #hero {
-                    border-width: 5px;
-                }
-
-                #hero__action {
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                    transform: scale(.8);
-                }
-
-                #hero__title {
-                    font-size: 62px;
-                }
-            }
-            
-            
-            #hubspot-messages-iframe-container {
-                margin: 20px;
-            }
-            
-            /* not proud of this, this is how hubspot works */
-            body.is-ua-mobile #hubspot-messages-iframe-container {
-                margin: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <section id="hero">
-            <a id="hero__action"
-               href="mailto:hire@shengslogar.com"></a>
-            <h1 id="hero__title">Sheng</h1>
-            <div id="hero__links">
-                <a href="https://twitter.com/shengslogar"
-                   target="_blank">twitter</a>
-                <a href="https://dribbble.com/shengslogar"
-                   target="_blank">dribbble</a>
-                <a href="https://github.com/shengslogar"
-                   target="_blank">github</a>
-            </div>
-        </section>
-        <script id="hs-script-loader" async src="//js.hs-scripts.com/5021877.js"></script>
-        <script async src="//www.googletagmanager.com/gtag/js?id=UA-38963765-4"></script>
-        <script>
-            // ga
-            window.dataLayer = window.dataLayer || [];
-
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            gtag('js', new Date());
-            gtag('config', 'UA-38963765-4');
-            
-            // custom
-            if (window.navigator.userAgent.toLowerCase().indexOf('mobile') !== -1) {
-                document.body.classList.add('is-ua-mobile');
-            }
-        </script>
-    </body>
+  <head>
+    <title>SHENG SLOGAR | Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Sheng Slogar is a front-end web developer from New York. Learn more.">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-38963765-4"></script>
+    <script defer src="/assets/script.js"></script>
+    <script defer src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </head>
+  <body>
+    <noscript>Oh snap, we really need JavaScript here! Please enable it.</noscript>
+    <div id="wf-loader"></div>
+    <section id="hero">
+      <a id="hero__action"
+         href="mailto:hire@shengslogar.com">hire</a>
+      <h1 id="hero__title">Sheng</h1>
+      <div id="hero__links">
+        <a href="https://twitter.com/shengslogar"
+           target="_blank">twitter</a>
+        <a href="https://dribbble.com/shengslogar"
+           target="_blank">dribbble</a>
+        <a href="https://github.com/shengslogar"
+           target="_blank">github</a>
+      </div>
+    </section>
+  </body>
 </html>
