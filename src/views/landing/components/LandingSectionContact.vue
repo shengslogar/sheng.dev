@@ -5,10 +5,12 @@
         Send a Note
       </h2>
       <form class="app-landing-section-contact__form"
-            name="contact"
             method="post"
-            :action="$router.resolve({ name: $options.RouteNames.Contact.Success }).href"
-            netlify>
+            :action="$router.resolve({ name: $options.RouteNames.Contact.Success }).href">
+        <!-- form-name is for Netlify -->
+        <input type="hidden"
+               name="form-name"
+               value="contact">
         <TextField labelText="Name"
                    isRequired
                    name="name"/>
