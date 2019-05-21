@@ -65,7 +65,7 @@ export default {
           title: 'Stoudt Associates',
           date: 'October 2016',
           description: `Stoudt needed a simple yet classy way to attract new clientele in the financial industry,
-          so we can up with a no-frills approach to do the job.`,
+          so we came up with a no-frills approach to do the job.`,
           linkHref: 'http://stoudtcpas.com',
           linkText: 'Visit Site',
         },
