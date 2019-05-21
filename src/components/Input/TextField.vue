@@ -53,14 +53,16 @@ export default {
 
 <style lang="scss">
 .app-text-field {
-  display       : block;
-  border        : 3px solid #ebebeb;
-  border-radius : .5rem;
-  margin        : 1rem 0;
-  width         : 100%;
-  outline       : none;
-  padding       : .8rem 1.25rem;
-  font-size     : 1.25rem;
+  display            : block;
+  border             : 3px solid #ebebeb;
+  border-radius      : .5rem;
+  margin             : 1rem 0;
+  width              : 100%;
+  outline            : none;
+  padding            : .8rem 1.25rem;
+  font-size          : 1.25rem;
+  /* remove iOS inset box-shadow */
+  -webkit-appearance : none;
 
   &:focus {
     border-color : #4950ff;

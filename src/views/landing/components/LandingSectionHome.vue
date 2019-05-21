@@ -86,13 +86,13 @@ export default {
 
     &__content {
       background : none;
-      padding    : 8rem 0;
+      padding    : 10rem 0;
     }
   }
 
   @media (max-width : $screen-sm-breakpoint) {
     &__h1 {
-      font-size : 3rem;
+      font-size : 3.5rem;
     }
 
     &__h2 {
