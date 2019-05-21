@@ -14,10 +14,5 @@ export default {
 .app-card-footer {
   font-size  : 1rem;
   text-align : right;
-
-  a {
-    text-decoration : none;
-    color           : #4b50ff;
-  }
 }
 </style>

@@ -8,15 +8,34 @@
            class="app-landing-section-about__avatar"
            alt="Sheng Slogar headshot">
       <p>
-        Hello! I'm Sheng, a full-stack developer from New York. My passion
+        Hi! I'm Sheng, an Upstate New York front-end developer. My passion
         is creating a better online experience for everyone.
       </p>
       <p>
-        From landing pages to advanced solutions for companies
-        like Delta Air Lines, I make technology that works.
+        From landing pages to advanced solutions for a Fortune 500 company,
+        I make technology that works.
       </p>
       <p>
-        Let's talk about your next project!
+        Let's grab some coffee! Or tea!
+        <a href="mailto:sheng@shengslogar.com">
+          Shoot me an email
+        </a> or say hi on the socials.
+      </p>
+      <p>
+        <a href="https://twitter.com/ShengSlogar"
+           target="_blank">
+          Twitter
+        </a>
+        &bull;
+        <a href="https://github.com/shengslogar"
+           target="_blank">
+          GitHub
+        </a>
+        &bull;
+        <a href="https://www.linkedin.com/in/shengslogar/"
+           target="_blank">
+          LinkedIn
+        </a>
       </p>
     </Content>
   </BaseLandingSection>
@@ -42,7 +61,7 @@ export default {
   &__avatar {
     float         : left;
     width         : 148px;
-    height        : 148px;
+    max-width     : 40%;
     border-radius : 50%;
     shape-outside : circle();
     margin        : 0 3rem 1rem 0;
@@ -54,6 +73,11 @@ export default {
 
     p {
       margin : 2rem 0;
+    }
+
+    a {
+      color           : #ff5e5e;
+      text-decoration : none;
     }
   }
 }

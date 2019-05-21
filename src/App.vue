@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/_variables.scss';
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700&display=swap');
 
 * {
@@ -26,12 +27,28 @@ export default {
   color      : #000000;
 }
 
+html,
+body,
+#app {
+  height : 100%;
+}
+
 html {
   font : 16px 'IBM Plex Sans', sans-serif;
+
+  @media (max-width : $screen-md-breakpoint) {
+    font-size : 15px;
+  }
 }
 
 body {
   font-size : 0;
   cursor    : default;
+  min-width : $app-min-width;
+}
+
+a {
+  text-decoration : none;
+  color           : $primary-color;
 }
 </style>

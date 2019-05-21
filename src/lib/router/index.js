@@ -12,5 +12,10 @@ export default new VueRouter({
       path: '/',
       component: () => import('../../views/landing/LandingIndex'),
     },
+    {
+      name: RouteNames.Contact.Success,
+      path: '/contact-success',
+      component: () => import('../../views/contact/ContactSuccess'),
+    },
   ],
 });

@@ -1,13 +1,8 @@
 <template>
   <div class="app-landing-section-home">
+    <AppHeader/>
     <div class="app-landing-section-home__whitespace"></div>
     <ContentWrapper class="app-landing-section-home__content-wrapper">
-      <div class="app-landing-section-home__logo">
-        <RouterLink :to="{ name: $options.RouteNames.Landing.Index }">
-          Sheng Slogar
-        </RouterLink>
-      </div>
-
       <div class="app-landing-section-home__content">
         <h1 class="app-landing-section-home__h1">
           This is me.
@@ -15,7 +10,7 @@
         <h2 class="app-landing-section-home__h2">
           Web developer, designer, New Yorker.
         </h2>
-        <Button>
+        <Button @click="handleLearnMore">
           Learn More
         </Button>
       </div>
@@ -24,18 +19,24 @@
 </template>
 
 <script>
-import RouteNames from '../../../lib/router/names';
 import Button from '../../../components/Button/Button';
 import ContentWrapper from '../../../components/Content/ContentWrapper';
+import AppHeader from '../../../components/App/Header';
 
 export default {
   name: 'LandingSectionHome',
-  RouteNames,
-  components: { ContentWrapper, Button },
+  methods: {
+    handleLearnMore() {
+      window.location.hash = '#about';
+    },
+  },
+  components: { AppHeader, ContentWrapper, Button },
 };
 </script>
 
 <style lang="scss">
+@import '../../../assets/variables';
+
 .app-landing-section-home {
   background : #4950ff;
   position   : relative;
@@ -51,28 +52,15 @@ export default {
   }
 
   &__content-wrapper {
-    position : relative;
-    z-index  : 1;
-    padding  : 3rem 0;
-  }
-
-  &__logo {
-    text-transform : uppercase;
-    font-weight    : 600;
-    color          : #333333;
-    font-size      : 1.5rem;
-    letter-spacing : 1px;
-
-    a {
-      color           : inherit;
-      text-decoration : none;
-    }
+    position    : relative;
+    z-index     : 1;
+    padding-top : 0;
   }
 
   &__content {
-    margin          : 12rem 0;
-    background      : url('/assets/img/landing-section-home-hero.svg') no-repeat center right;
-    background-size : contain;
+    padding         : 12rem 0;
+    background      : url('/assets/img/landing-section-home-hero.svg') no-repeat 100% 40%;
+    background-size : 45%;
   }
 
   &__h1 {
@@ -85,6 +73,31 @@ export default {
     font-weight : normal;
     color       : #aaaaaa;
     margin      : 3rem 0;
+  }
+
+  @media (max-width : $screen-md-breakpoint) {
+    &__whitespace {
+      clip-path : none;
+    }
+
+    &__content-wrapper {
+      text-align : center;
+    }
+
+    &__content {
+      background : none;
+      padding    : 8rem 0;
+    }
+  }
+
+  @media (max-width : $screen-sm-breakpoint) {
+    &__h1 {
+      font-size : 3rem;
+    }
+
+    &__h2 {
+      font-size : 1.25rem;
+    }
   }
 }
 </style>

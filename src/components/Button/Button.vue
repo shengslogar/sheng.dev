@@ -19,7 +19,7 @@ export default {
   computed: {
     classList() {
       return {
-        '.app-button--full-width': this.isFullWidth,
+        'app-button--full-width': this.isFullWidth,
       };
     },
   },
@@ -27,6 +27,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../assets/variables';
+
 .app-button {
   font-size     : 1.5rem;
   border-radius : .25rem;
@@ -38,14 +40,41 @@ export default {
   outline       : none;
   cursor        : pointer;
   margin        : 1rem 0;
+  position      : relative;
+  overflow      : hidden;
+
+  &::after {
+    content        : '';
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    background     : rgba(255, 255, 255, .05);
+    pointer-events : none;
+    transition     : inherit;
+    opacity        : 0;
+  }
 
   &--full-width {
     width : 100%;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow : 0 2px 8px rgba(0, 0, 0, .1);
     transform  : translateY(-4px);
+  }
+
+  &:focus {
+    &::after {
+      opacity : 1;
+    }
+  }
+
+  @media (max-width : $screen-sm-breakpoint) {
+    font-size : 1.25rem;
+    padding   : .75rem 1.5rem;
   }
 }
 </style>

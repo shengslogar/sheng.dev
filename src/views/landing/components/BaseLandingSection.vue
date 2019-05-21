@@ -39,6 +39,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../../assets/variables';
+
 .app-base-landing-section {
   background : #000000;
   color      : #ffffff;
@@ -47,7 +49,7 @@ export default {
     display     : flex;
     align-items : flex-end;
     flex-wrap   : wrap;
-    padding     : 4rem 0;
+    padding     : 4rem 1rem;
   }
 
   &__title {
@@ -62,6 +64,28 @@ export default {
   &__content {
     padding : 1rem;
     flex    : 1 1 50%;
+  }
+
+
+  @media (max-width : $screen-md-breakpoint) {
+    &__content-wrapper {
+      flex-direction : column;
+      align-items    : flex-start;
+    }
+
+    &__title {
+      position  : static;
+      width     : 100%;
+      font-size : 4rem;
+      padding   : 2rem;
+    }
+  }
+
+  @media (max-width : $screen-sm-breakpoint) {
+    &__title {
+      text-align : center;
+      font-size  : 3rem;
+    }
   }
 }
 </style>

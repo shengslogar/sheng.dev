@@ -4,74 +4,19 @@
       backgroundColor="#4950ff"
       titleText="Projects">
     <CardGroup>
-      <Card>
+      <Card v-for="({ title, date, description, linkHref, linkText }) in projectItems"
+            :key="linkHref">
         <CardHeader>
-          CANiTEXT911
+          {{ title }}
+          <div class="app-landing-section-projects__date">
+            {{ date }}
+          </div>
         </CardHeader>
-        <CardBody>
-          Public information site designed to help U.S. citizens discover if texting 911 is supported in their
-          area.
-        </CardBody>
+        <CardBody v-html="description"/>
         <CardFooter>
-          <a href="https://canitext911.us"
+          <a :href="linkHref"
              target="_blank">
-            Visit Site
-          </a>
-        </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader>
-          Homina
-        </CardHeader>
-        <CardBody>
-          Minimalistic new-tab Chrome extension
-        </CardBody>
-        <CardFooter>
-          <a href="https://chrome.google.com/webstore/detail/homina/fioieebccopjgmnhbgkcfnhaijefjjpj"
-             target="_blank">
-            Visit Chrome Web Store
-          </a>
-        </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader>
-          Bing Schedules
-        </CardHeader>
-        <CardBody>
-          Chrome extension for Binghamton University students
-        </CardBody>
-        <CardFooter>
-          <a href="https://chrome.google.com/webstore/detail/bing-schedules/ofpmakmjnlpkpnelpdkjpapilnbcafdl?hl=en-US"
-             target="_blank">
-            Visit Chrome Web Store
-          </a>
-        </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader>
-          Stoudt Associates
-        </CardHeader>
-        <CardBody>
-          Landing Page
-        </CardBody>
-        <CardFooter>
-          <a href="http://stoudtcpas.com/"
-             target="_blank">
-            Visit Site
-          </a>
-        </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader>
-          Heart&Cart
-        </CardHeader>
-        <CardBody>
-          Landing Page
-        </CardBody>
-        <CardFooter>
-          <a href="http://heartandcart.com/"
-             target="_blank">
-            Visit Site
+            {{ linkText }}
           </a>
         </CardFooter>
       </Card>
@@ -89,6 +34,52 @@ import CardGroup from '../../../components/Card/CardGroup';
 
 export default {
   name: 'LandingSectionProjects',
+  data() {
+    return {
+      projectItems: [
+        {
+          title: 'CANiTEXT911',
+          date: 'December 2018',
+          description: `CiT is an online database of FCC-approved areas where texting 911 is supported.
+          It's fast, responsive, lightweight, and
+          <a href="https://github.com/CanIText911" target="_blank">open source</a>!`,
+          linkHref: 'https://canitext911.us',
+          linkText: 'Visit Site',
+        },
+        {
+          title: 'Homina',
+          date: 'June 2018',
+          description: `Homina is a simplistic new tab page for Chrome. All the cool factor, none of the bloat.`,
+          linkHref: 'https://chrome.google.com/webstore/detail/homina/fioieebccopjgmnhbgkcfnhaijefjjpj',
+          linkText: 'Visit Chrome Web Store',
+        },
+        {
+          title: 'Bing Schedules',
+          date: 'February 2018',
+          description: `Bing Schedules was created during my college days to import a web-based class schedule
+          into the calendar on my phone and laptop.`,
+          linkHref: 'https://chrome.google.com/webstore/detail/bing-schedules/ofpmakmjnlpkpnelpdkjpapilnbcafdl',
+          linkText: 'Visit Chrome Web Store',
+        },
+        {
+          title: 'Stoudt Associates',
+          date: 'October 2016',
+          description: `Stoudt needed a simple yet classy way to attract new clientele in the financial industry,
+          so we can up with a no-frills approach to do the job.`,
+          linkHref: 'http://stoudtcpas.com',
+          linkText: 'Visit Site',
+        },
+        {
+          title: 'Heart&Cart',
+          date: 'May 2016',
+          description: `As a fresh new startup, Heart&Cart needed a way to track new potential customers
+          and incentivize sharing. This landing page did just that.`,
+          linkHref: `http://heartandcart.com`,
+          linkText: 'Visit Site',
+        },
+      ],
+    };
+  },
   components: {
     CardGroup,
     CardFooter,
@@ -103,5 +94,12 @@ export default {
 <style lang="scss">
 .app-landing-section-projects {
   background-image : linear-gradient(175deg, #4950ff 45%, #3d5ffb);
+
+  &__date {
+    margin-top  : .25rem;
+    font-size   : .95rem;
+    font-weight : normal;
+    color       : #555555;
+  }
 }
 </style>

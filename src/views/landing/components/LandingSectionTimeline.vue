@@ -3,8 +3,8 @@
       class="app-landing-section-timeline"
       backgroundColor="#eb1c63"
       titleText="Timeline">
-    <TimelineItem v-for="({ title, date, description }) in timelineItems"
-                  :key="title">
+    <LandingSectionTimelineItem v-for="({ title, date, description }) in timelineItems"
+                                :key="title">
       <template #Title>
         {{ title }}
       </template>
@@ -12,13 +12,13 @@
         {{ date}}
       </template>
       {{ description }}
-    </TimelineItem>
+    </LandingSectionTimelineItem>
   </BaseLandingSection>
 </template>
 
 <script>
 import BaseLandingSection from './BaseLandingSection';
-import TimelineItem from '../../../components/Timeline/TimelineItem';
+import LandingSectionTimelineItem from './LandingSectionTimelineItem';
 
 export default {
   name: 'LandingSectionTimeline',
@@ -28,28 +28,27 @@ export default {
         {
           title: 'Independent Contractor',
           date: '2019 - Present',
-          description: `Responsible for various websites and web applications
-          ranging from a Fortune 500 company to local businesses.`,
+          description: `Created various websites and web applications. Currently working on proprietary software
+          used by companies around the world.`,
         },
         {
           title: 'Web Developer - Onjax',
           date: '2018 - 2019',
-          description: `Front-end software development in an agile environment. Responsible for reimagining
-          and building legacy features into a brand-new application that is highly interactive, performant,
-          and works on every screen.`,
+          description: `Responsible for brainstorming and creating the legacy front-end of our main software offering
+          into a modern and highly polished web app that worked on every device.`,
         },
         {
           title: 'Intern Web Developer - Triberr',
           date: '2014 - 2016',
-          description: `Led an internal development refresh effort for our front-facing consumer app.
-          Created mockups, graphics, and hand coded fully-functioning web prototypes while presenting
-          both best practices and radically new ideas.`,
+          description: `Remotely led an internal development effort for our front-facing consumer app.
+          Created mockups, graphics, and coded fully-functioning web prototypes while presenting best practices
+          and radically new ideas.`,
         },
       ],
     };
   },
   components: {
-    TimelineItem,
+    LandingSectionTimelineItem,
     BaseLandingSection,
   },
 };

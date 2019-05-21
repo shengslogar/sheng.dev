@@ -6,7 +6,7 @@
     <LandingSectionTimeline id="timeline"/>
     <LandingSectionContact id="contact"/>
     <div class="app-landing-index__footer">
-      Made in New York!
+      Made in New York
     </div>
   </div>
 </template>
@@ -34,12 +34,12 @@ export default {
 .app-landing-index {
   &__footer {
     margin     : 1rem auto;
-    width      : 256px;
+    width      : 208px;
     font-size  : 1rem;
     text-align : center;
-    color      : #aaaaaa;
+    color      : #bbbbbb;
     border-top : 1px solid #eeeeee;
-    padding    : 1rem;
+    padding    : 1.5rem 0;
   }
 }
 </style>
