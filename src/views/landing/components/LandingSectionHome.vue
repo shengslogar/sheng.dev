@@ -59,7 +59,7 @@ export default {
 
   &__content {
     padding         : 12rem 0;
-    background      : url('/assets/img/landing-section-home-hero.svg') no-repeat 100% 40%;
+    background      : url('/static/img/landing-section-home-hero.svg') no-repeat 100% 40%;
     background-size : 45%;
   }
 

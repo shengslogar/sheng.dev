@@ -4,7 +4,7 @@
       backgroundColor="#292929"
       titleText="About">
     <Content class="app-landing-section-about__content">
-      <img src="/assets/img/landing-section-about-avatar.jpg"
+      <img src="/static/img/landing-section-about-avatar.jpg"
            class="app-landing-section-about__avatar"
            alt="Sheng Slogar headshot">
       <p>
