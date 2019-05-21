@@ -46,15 +46,22 @@ export default {
   &__content-wrapper {
     display     : flex;
     align-items : flex-end;
+    flex-wrap   : wrap;
+    padding     : 4rem 0;
   }
 
   &__title {
-    font-size  : 6rem;
+    font-size  : 5rem;
     font-style : italic;
+    flex       : 1 1 50%;
+    padding    : 2rem;
+    position   : sticky;
+    bottom     : 0;
   }
 
   &__content {
     padding : 1rem;
+    flex    : 1 1 50%;
   }
 }
 </style>

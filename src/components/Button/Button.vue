@@ -1,7 +1,8 @@
 <template>
   <button @click="$emit('click', $event)"
           type="button"
-          class="app-button">
+          class="app-button"
+          :class="classList">
     <slot/>
   </button>
 </template>
@@ -9,6 +10,19 @@
 <script>
 export default {
   name: 'Button',
+  props: {
+    isFullWidth: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    classList() {
+      return {
+        '.app-button--full-width': this.isFullWidth,
+      };
+    },
+  },
 }
 </script>
 
@@ -24,5 +38,14 @@ export default {
   outline       : none;
   cursor        : pointer;
   margin        : 1rem 0;
+
+  &--full-width {
+    width : 100%;
+  }
+
+  &:hover {
+    box-shadow : 0 2px 8px rgba(0, 0, 0, .1);
+    transform  : translateY(-4px);
+  }
 }
 </style>

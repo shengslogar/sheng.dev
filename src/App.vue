@@ -16,9 +16,14 @@ export default {
 * {
   box-sizing          : border-box;
   transition          : .2s ease;
-  transition-property : color, background-color, border-color, opacity, transform, visibility;
+  transition-property : color, background-color, border-color, opacity, transform, visibility, box-shadow;
   margin              : 0;
   font-family         : inherit;
+}
+
+::selection {
+  background : #ffbc49;
+  color      : #000000;
 }
 
 html {
