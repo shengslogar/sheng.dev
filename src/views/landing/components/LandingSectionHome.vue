@@ -8,7 +8,7 @@
           This is me.
         </h1>
         <h2 class="app-landing-section-home__h2">
-          Web developer, designer, New Yorker.
+          Web developer, designer, future Utahn.
         </h2>
         <Button @click="handleLearnMore">
           Learn More

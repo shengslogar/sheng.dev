@@ -8,8 +8,8 @@
            class="app-landing-section-about__avatar"
            alt="Sheng Slogar headshot">
       <p>
-        Hi! I'm Sheng, an Upstate New York front-end developer. My passion
-        is creating a better online experience for everyone.
+        Hi! I'm Sheng, a Utah-bound front-end developer originally from Upstate New York.
+        My passion is creating a better online experience for everyone.
       </p>
       <p>
         From landing pages to advanced solutions for a Fortune 500 company,

@@ -27,9 +27,9 @@ export default {
       timelineItems: [
         {
           title: 'Independent Contractor',
-          date: '2019 - Present',
-          description: `Created various websites and web applications. Currently working on proprietary software
-          used by companies around the world.`,
+          date: '2017 - Present',
+          description: `Created various websites and web applications. Currently developing proprietary software
+          used by international companies.`,
         },
         {
           title: 'Web Developer - Onjax',
