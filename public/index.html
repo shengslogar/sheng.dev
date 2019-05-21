@@ -15,9 +15,20 @@
             src="//www.googletagmanager.com/gtag/js?id=UA-38963765-4"></script>
   </head>
   <body>
-    <noscript>
+    <noscript style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;  display: flex; align-items: center;
+    justify-content: center; text-align: center; font: 18px sans-serif; padding: 3rem;">
       Oh snap, we really need JavaScript here. Please enable it!
     </noscript>
     <div id="app"></div>
+    <!-- static Netlify-hinted form -->
+    <form name="contact"
+          netlify
+          hidden>
+      <input type="text"
+             name="name">
+      <input type="email"
+             name="email"/>
+      <textarea name="message"></textarea>
+    </form>
   </body>
 </html>
