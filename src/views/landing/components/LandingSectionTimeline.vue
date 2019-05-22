@@ -34,7 +34,7 @@ export default {
         {
           title: 'Web Developer - Onjax',
           date: '2018 - 2019',
-          description: `Responsible for brainstorming and creating the legacy front-end of our main software offering
+          description: `Responsible for transforming the legacy front end of our main software offering
           into a modern and highly polished web app that worked on every device.`,
         },
         {
