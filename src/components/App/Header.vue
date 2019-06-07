@@ -32,9 +32,9 @@ export default {
     a {
       text-transform  : uppercase;
       font-weight     : 600;
-      color           : #adadad;
+      color           : #000000;
       font-size       : 1.5rem;
-      letter-spacing  : .25rem;
+      letter-spacing  : .2rem;
       text-decoration : none;
 
       &:hover {

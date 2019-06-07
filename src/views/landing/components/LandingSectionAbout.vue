@@ -36,6 +36,11 @@
            target="_blank">
           LinkedIn
         </a>
+        &bull;
+        <a href="https://dribbble.com/shengslogar"
+           target="_blank">
+          Dribbble
+        </a>
       </p>
     </Content>
   </BaseLandingSection>
@@ -69,7 +74,7 @@ export default {
 
   &__content {
     font-size   : 1.1rem;
-    line-height : 1.75;
+    line-height : 2;
 
     p {
       margin : 2rem 0;

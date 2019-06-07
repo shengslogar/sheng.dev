@@ -30,8 +30,8 @@ export default {
 @import '../../assets/variables';
 
 .app-button {
-  font-size     : 1.5rem;
-  border-radius : .25rem;
+  font-size     : 1.25rem;
+  border-radius : .35rem;
   color         : #ffffff;
   padding       : 1rem 2.25rem;
   box-shadow    : 0 1px 2px rgba(0, 0, 0, .05);

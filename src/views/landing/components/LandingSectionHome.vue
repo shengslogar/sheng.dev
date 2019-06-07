@@ -58,13 +58,13 @@ export default {
   }
 
   &__content {
-    padding         : 12rem 0;
-    background      : url('/static/img/landing-section-home-hero.svg') no-repeat 100% 40%;
+    padding         : 12rem 0 18rem;
+    background      : url('/static/img/landing-section-home-hero.svg') no-repeat 100% 38%;
     background-size : 45%;
   }
 
   &__h1 {
-    font-size   : 5rem;
+    font-size   : 6rem;
     font-weight : bold;
   }
 
