@@ -56,10 +56,9 @@ export default {
     font-size  : 5rem;
     font-style : italic;
     flex       : 1 1 45%;
-    padding    : 0 5rem 4rem 0;
+    padding    : 0 1rem 1rem 0;
     position   : sticky;
-    bottom     : 0;
-    text-align : right;
+    bottom     : 1rem;
   }
 
   &__content {
@@ -76,9 +75,8 @@ export default {
     }
 
     &__title {
-      position   : static;
-      font-size  : 4rem;
-      text-align : left;
+      position  : static;
+      font-size : 4rem;
     }
 
     &__title,
