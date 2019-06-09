@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss">
 .app-content-wrapper {
-  max-width : 1024px;
+  max-width : 1104px;
   margin    : 0 auto;
   padding   : 1rem;
 }

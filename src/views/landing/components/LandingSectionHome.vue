@@ -47,20 +47,19 @@ export default {
     left       : 0;
     right      : 0;
     bottom     : 0;
-    clip-path  : polygon(0 0, 0 100%, 100% 80%, 100% 0);
+    clip-path  : polygon(0 0, 0 100%, 100% 82%, 100% 0);
     background : #ffffff;
   }
 
   &__content-wrapper {
     position    : relative;
     z-index     : 1;
-    padding-top : 0;
   }
 
   &__content {
     padding         : 12rem 0 18rem;
-    background      : url('/static/img/landing-section-home-hero.svg') no-repeat 100% 38%;
-    background-size : 45%;
+    background      : url('/static/img/landing-section-home-hero.svg') no-repeat 100% calc(50% - 75px);
+    background-size : auto 300px;
   }
 
   &__h1 {

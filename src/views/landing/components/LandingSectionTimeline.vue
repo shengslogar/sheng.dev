@@ -3,16 +3,18 @@
       class="app-landing-section-timeline"
       backgroundColor="#eb1c63"
       titleText="Timeline">
-    <LandingSectionTimelineItem v-for="({ title, date, description }) in timelineItems"
-                                :key="title">
-      <template #Title>
-        {{ title }}
-      </template>
-      <template #Date>
-        {{ date}}
-      </template>
-      {{ description }}
-    </LandingSectionTimelineItem>
+    <div class="app-landing-section-timeline__items">
+      <LandingSectionTimelineItem v-for="({ title, date, description }) in timelineItems"
+                                  :key="title">
+        <template #Title>
+          {{ title }}
+        </template>
+        <template #Date>
+          {{ date}}
+        </template>
+        {{ description }}
+      </LandingSectionTimelineItem>
+    </div>
   </BaseLandingSection>
 </template>
 
@@ -57,5 +59,9 @@ export default {
 <style lang="scss">
 .app-landing-section-timeline {
   background-image : linear-gradient(175deg, #eb1c63, #fb1261);
+
+  &__items {
+    overflow : hidden;
+  }
 }
 </style>

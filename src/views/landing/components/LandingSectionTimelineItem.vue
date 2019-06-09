@@ -25,9 +25,12 @@ export default {
 @import '../../../assets/variables';
 
 .app-landing-section-timeline-item {
-  padding  : 2rem 0;
   position : relative;
-  overflow : hidden;
+  margin   : 1rem 0;
+
+  &:not(:first-of-type):not(:last-of-type) {
+    margin : 4rem 0;
+  }
 
   &__title {
     display     : flex;
@@ -36,40 +39,33 @@ export default {
     &-dot {
       flex          : 0 0 auto;
       display       : block;
-      width         : .75rem;
-      height        : .75rem;
+      width         : 16px;
+      height        : 16px;
       border-radius : 50%;
-      margin-right  : 3.25rem;
+      margin-right  : calc(5rem - 16px);
       border        : 3px solid #ffffff;
-      position      : relative;
-
-      &::before,
-      &::after {
-        content    : '';
-        position   : absolute;
-        background : #ffffff;
-        height     : 40rem;
-        width      : .1rem;
-        left       : .15rem;
-      }
-
-      &::before {
-        bottom : 100%;
-      }
 
       &::after {
-        top : 100%;
+        content     : '';
+        position    : absolute;
+        background  : #ffffff;
+        width       : 3px;
+        margin-left : 3px;
+        // this is bad...
+        top         : calc(1.5rem - 4px);
+        bottom      : calc(-4rem - 4px);
       }
     }
 
     &-text {
-      font-size : 1.5rem;
+      font-size   : 1.5rem;
+      line-height : 1.5rem;
     }
   }
 
   &__date,
   &__description {
-    padding-left : 4rem;
+    padding-left : 5rem;
   }
 
   &__date {

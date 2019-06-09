@@ -49,16 +49,17 @@ export default {
     display     : flex;
     align-items : flex-end;
     flex-wrap   : wrap;
-    padding     : 4rem 1rem;
+    padding     : 5rem 1rem;
   }
 
   &__title {
     font-size  : 5rem;
     font-style : italic;
-    flex       : 1 1 50%;
-    padding    : 2rem;
+    flex       : 1 1 45%;
+    padding    : 0 5rem 4rem 0;
     position   : sticky;
     bottom     : 0;
+    text-align : right;
   }
 
   &__content {
@@ -71,13 +72,19 @@ export default {
     &__content-wrapper {
       flex-direction : column;
       align-items    : flex-start;
+      padding        : 2rem 1rem;
     }
 
     &__title {
-      position  : static;
-      width     : 100%;
-      font-size : 4rem;
-      padding   : 2rem;
+      position   : static;
+      font-size  : 4rem;
+      text-align : left;
+    }
+
+    &__title,
+    &__content {
+      padding : 2rem;
+      width   : 100%;
     }
   }
 

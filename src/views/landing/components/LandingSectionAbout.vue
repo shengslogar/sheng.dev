@@ -16,32 +16,29 @@
         I make technology that works.
       </p>
       <p>
-        Let's grab some coffee! Or tea!
+        Let's grab some coffee! Or tea! Water? Or you can just
         <a href="mailto:sheng@shengslogar.com">
-          Shoot me an email
+          shoot me an email
         </a> or say hi on the socials.
       </p>
-      <p>
+      <div class="app-landing-section-about__links">
         <a href="https://twitter.com/ShengSlogar"
            target="_blank">
           Twitter
         </a>
-        &bull;
         <a href="https://github.com/shengslogar"
            target="_blank">
           GitHub
         </a>
-        &bull;
         <a href="https://www.linkedin.com/in/shengslogar/"
            target="_blank">
           LinkedIn
         </a>
-        &bull;
         <a href="https://dribbble.com/shengslogar"
            target="_blank">
           Dribbble
         </a>
-      </p>
+      </div>
     </Content>
   </BaseLandingSection>
 </template>
@@ -74,15 +71,26 @@ export default {
 
   &__content {
     font-size   : 1.1rem;
-    line-height : 2;
+    line-height : 1.5;
 
     p {
-      margin : 2rem 0;
+      margin : 0 0 3rem;
     }
 
     a {
       color           : #ff5e5e;
       text-decoration : none;
+    }
+  }
+
+  &__links {
+    display        : flex;
+    flex-wrap      : wrap;
+    font-size      : .8rem;
+    text-transform : uppercase;
+
+    a {
+      padding : 0 1rem 0 0;
     }
   }
 }

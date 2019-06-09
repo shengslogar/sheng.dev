@@ -49,7 +49,6 @@ export default {
 .app-landing-section-contact {
   &__wrapper {
     text-align : center;
-    max-width  : 800px;
   }
 
   &__h2 {
@@ -58,9 +57,24 @@ export default {
     margin     : 4rem 0;
   }
 
+  &__form {
+    background      : url('/static/img/landing-section-contact-background.svg') no-repeat 100% 100%;
+    background-size : 12rem;
+
+    input, textarea {
+      max-width    : 688px;
+      margin-left  : auto;
+      margin-right : auto;
+    }
+  }
+
   @media (max-width : $screen-md-breakpoint) {
     &__h2 {
       font-size : 3rem;
+    }
+
+    &__form {
+      background : none;
     }
   }
 }

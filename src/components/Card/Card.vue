@@ -20,6 +20,6 @@ export default {
   box-shadow    : 0 2rem 2rem -2rem rgba(0, 0, 0, 0.25);
   background    : #ffffff;
   padding       : 2rem;
-  margin        : 2rem 0;
+  margin        : 4rem 0;
 }
 </style>

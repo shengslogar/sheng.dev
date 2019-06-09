@@ -54,7 +54,7 @@ export default {
 <style lang="scss">
 .app-text-field {
   display            : block;
-  border             : 3px solid #ebebeb;
+  border             : 2px solid #ebebeb;
   border-radius      : .5rem;
   margin             : 1rem 0;
   width              : 100%;
@@ -63,6 +63,11 @@ export default {
   font-size          : 1.25rem;
   /* remove iOS inset box-shadow */
   -webkit-appearance : none;
+
+  &::placeholder {
+    color      : #8a8a8a;
+    font-style : italic;
+  }
 
   &:focus {
     border-color : #4950ff;
