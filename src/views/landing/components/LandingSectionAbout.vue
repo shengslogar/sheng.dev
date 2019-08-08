@@ -9,7 +9,7 @@
            title="Yep, that's my face"
            alt="Sheng Slogar headshot">
       <p>
-        Hi! I'm Sheng, a Utah-based full-stack developer originally from Upstate New York.
+        Hi! I'm Sheng, a Utah-based full-stack developer from Upstate New York.
         My passion is creating a better online experience for everyone.
       </p>
       <p>
