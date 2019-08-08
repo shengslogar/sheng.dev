@@ -8,7 +8,7 @@
           Hello!
         </h1>
         <h2 class="app-landing-section-home__h2">
-          Developer, designer, Utahn. Howdy! &#x1f44b;
+          Developer, designer, Utahn. &#x1f44b;
         </h2>
         <Button @click="handleLearnMore">
           Learn More
