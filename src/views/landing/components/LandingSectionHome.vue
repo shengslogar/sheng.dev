@@ -5,10 +5,10 @@
     <ContentWrapper class="app-landing-section-home__content-wrapper">
       <div class="app-landing-section-home__content">
         <h1 class="app-landing-section-home__h1">
-          This is me.
+          Hello!
         </h1>
         <h2 class="app-landing-section-home__h2">
-          Web developer, designer, future Utahn.
+          Developer, designer, Utahn. Howdy! &#x1f44b;
         </h2>
         <Button @click="handleLearnMore">
           Learn More
@@ -27,7 +27,7 @@ export default {
   name: 'LandingSectionHome',
   methods: {
     handleLearnMore() {
-      window.location.hash = '#about';
+      document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
     },
   },
   components: { AppHeader, ContentWrapper, Button },
@@ -52,18 +52,18 @@ export default {
   }
 
   &__content-wrapper {
-    position    : relative;
-    z-index     : 1;
+    position : relative;
+    z-index  : 1;
   }
 
   &__content {
-    padding         : 12rem 0 18rem;
+    padding         : 9rem 0 15rem;
     background      : url('/static/img/landing-section-home-hero.svg') no-repeat 100% calc(50% - 75px);
     background-size : auto 300px;
   }
 
   &__h1 {
-    font-size   : 6rem;
+    font-size   : 7rem;
     font-weight : bold;
   }
 
@@ -71,7 +71,7 @@ export default {
     font-size   : 1.5rem;
     font-weight : normal;
     color       : #aaaaaa;
-    margin      : 3rem 0;
+    margin      : 0 0 2rem;
   }
 
   @media (max-width : $screen-md-breakpoint) {
@@ -85,7 +85,7 @@ export default {
 
     &__content {
       background : none;
-      padding    : 10rem 0;
+      padding    : 9rem 0 10rem;
     }
   }
 

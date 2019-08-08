@@ -28,10 +28,9 @@ export default {
     return {
       timelineItems: [
         {
-          title: 'Independent Contractor',
+          title: 'Web Developer - Diglactic',
           date: '2017 - Present',
-          description: `Created various websites and web applications. Currently developing proprietary software
-          used by international companies.`,
+          description: `Creating various websites and web applications.`,
         },
         {
           title: 'Web Developer - Onjax',

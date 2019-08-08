@@ -6,9 +6,10 @@
     <Content class="app-landing-section-about__content">
       <img src="/static/img/landing-section-about-avatar.jpg"
            class="app-landing-section-about__avatar"
+           title="Yep, that's my face"
            alt="Sheng Slogar headshot">
       <p>
-        Hi! I'm Sheng, a Utah-bound front-end developer originally from Upstate New York.
+        Hi! I'm Sheng, a Utah-based full-stack developer originally from Upstate New York.
         My passion is creating a better online experience for everyone.
       </p>
       <p>
@@ -16,9 +17,9 @@
         I make technology that works.
       </p>
       <p>
-        Let's grab some coffee! Or tea! Water? Or you can just
+        Let's grab some coffee! Or tea! Seriously, water?
         <a href="mailto:sheng@shengslogar.com">
-          shoot me an email
+          Shoot me an email
         </a> or say hi on the socials.
       </p>
       <div class="app-landing-section-about__links">
@@ -37,6 +38,14 @@
         <a href="https://dribbble.com/shengslogar"
            target="_blank">
           Dribbble
+        </a>
+        <a href="https://blog.shengslogar.com"
+           target="_blank">
+          Blog
+        </a>
+        <a href="https://lintrollerpodcast.com"
+           target="_blank">
+          Podcast
         </a>
       </div>
     </Content>
@@ -84,13 +93,17 @@ export default {
   }
 
   &__links {
-    display        : flex;
-    flex-wrap      : wrap;
-    font-size      : .8rem;
-    text-transform : uppercase;
+    display   : flex;
+    flex-wrap : wrap;
+    font-size : 1rem;
 
     a {
       padding : 0 1rem 0 0;
+
+      &::before,
+      &::after {
+        content : '/';
+      }
     }
   }
 }

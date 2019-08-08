@@ -31,11 +31,15 @@ export default {
 
     a {
       text-transform  : uppercase;
-      font-weight     : bold;
-      color           : #000000;
+      font-weight     : 600;
+      color           : #222222;
       font-size       : 1.5rem;
-      letter-spacing  : .15rem;
       text-decoration : none;
+
+      &:hover,
+      &:focus {
+        color : #000000;
+      }
     }
   }
 
