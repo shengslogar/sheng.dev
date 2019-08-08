@@ -71,7 +71,7 @@ export default {
     font-size   : 1.5rem;
     font-weight : normal;
     color       : #aaaaaa;
-    margin      : 0 0 2rem;
+    margin      : 1rem 0 3rem;
   }
 
   @media (max-width : $screen-md-breakpoint) {
