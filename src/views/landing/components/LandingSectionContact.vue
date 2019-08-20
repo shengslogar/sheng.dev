@@ -2,7 +2,7 @@
   <div class="app-landing-section-contact">
     <ContentWrapper class="app-landing-section-contact__wrapper">
       <h2 class="app-landing-section-contact__h2">
-        Send a Note
+        Say Hi
       </h2>
       <form class="app-landing-section-contact__form"
             method="post"
@@ -39,7 +39,7 @@ import RouteNames from '../../../lib/router/names';
 export default {
   name: 'LandingSectionContact',
   RouteNames,
-  components: { ContentWrapper, Button, TextField },
+  components: {ContentWrapper, Button, TextField},
 };
 </script>
 

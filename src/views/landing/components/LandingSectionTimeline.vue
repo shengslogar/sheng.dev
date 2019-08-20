@@ -30,7 +30,7 @@ export default {
         {
           title: 'Web Developer - Diglactic',
           date: '2017 - Present',
-          description: `Creating various websites and web applications.`,
+          description: `Currently working on websites and web apps, specializing in Vue.js, Laravel, and WordPress.`,
         },
         {
           title: 'Web Developer - Onjax',

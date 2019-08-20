@@ -38,6 +38,13 @@ export default {
     return {
       projectItems: [
         {
+          title: 'Smokey Legend BBQ',
+          date: 'July 2019',
+          description: `Simple WordPress-powered website for the folks with some of Upstate New York's finest barbecue.`,
+          linkHref: 'https://smokeylegend.com',
+          linkText: 'Visit Site',
+        },
+        {
           title: 'CANiTEXT911',
           date: 'December 2018',
           description: `CiT is an online database of FCC-approved areas where texting 911 is supported.

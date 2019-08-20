@@ -9,18 +9,15 @@
            title="Yep, that's my face"
            alt="Sheng Slogar headshot">
       <p>
-        Hi! I'm Sheng, a Utah-based full-stack developer from Upstate New York.
-        My passion is creating a better online experience for everyone.
+        I'm a software developer located in Sandy, Utah currently working for
+        <a href="https://diglactic.com"
+           target="_blank">Diglactic</a>, a company I started in 2019 to help
+        people navigate all the craziness that is the internet.
       </p>
       <p>
-        From landing pages to advanced solutions for a Fortune 500 company,
-        I make technology that works.
-      </p>
-      <p>
-        Let's grab some coffee! Or tea! Seriously, water?
-        <a href="mailto:sheng@shengslogar.com">
-          Shoot me an email
-        </a> or say hi on the socials.
+        If you're looking for help with your website or web app,
+        <a href="mailto:sheng@diglactic.com">send me an email</a>
+        or get in touch on the socials &mdash; I'd love to chat!
       </p>
       <div class="app-landing-section-about__links">
         <a href="https://twitter.com/ShengSlogar"
@@ -100,9 +97,12 @@ export default {
     a {
       padding : 0 1rem 0 0;
 
-      &::before,
+      &::before {
+        content : '[';
+      }
+
       &::after {
-        content : '/';
+        content : ']';
       }
     }
   }
