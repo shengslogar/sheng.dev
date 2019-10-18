@@ -115,7 +115,7 @@ body {
 
 @keyframes app__footer-img--entrance {
   0% {
-    visibilitY : hidden;
+    visibility : hidden;
   }
 }
 
