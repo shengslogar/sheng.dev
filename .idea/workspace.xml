@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ccd2dc3-ec81-4f01-96c3-75279a2b0de8" name="Default Changelist" comment="=">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/_redirects" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/img/landing-section-about-avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/img/landing-section-contact-background.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/img/landing-section-home-hero.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/Header.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/CardBody.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/CardFooter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/CardGroup.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/CardHeader.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/ContentWrapper.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Input/TextField.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/router/names.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/contact/ContactSuccess.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/landing/LandingIndex.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/landing/components/BaseLandingSection.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/landing/components/LandingSectionAbout.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/landing/components/LandingSectionContact.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/landing/components/LandingSectionHome.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/landing/components/LandingSectionProjects.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/landing/components/LandingSectionTimeline.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/landing/components/LandingSectionTimelineItem.vue" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1PhqxgEcmGgfdMfHILoAyLbOCbK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../skipace" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\websites\shengslogar.com\src\views\landing\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\websites\shengslogar.com\src\views\landing\components" />
+      <recent name="C:\dev\websites\shengslogar.com\src\lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ccd2dc3-ec81-4f01-96c3-75279a2b0de8" name="Default Changelist" comment="" />
+      <created>1535325842413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535325842413</updated>
+      <workItem from="1535325843747" duration="1290000" />
+      <workItem from="1539476659331" duration="2210000" />
+      <workItem from="1545367001124" duration="6444000" />
+      <workItem from="1545439752916" duration="5325000" />
+      <workItem from="1549844405290" duration="879000" />
+      <workItem from="1555302856538" duration="678000" />
+      <workItem from="1558205604541" duration="1204000" />
+      <workItem from="1558283293828" duration="827000" />
+      <workItem from="1558357495979" duration="35000" />
+      <workItem from="1558371824735" duration="27728000" />
+      <workItem from="1558489245069" duration="1304000" />
+      <workItem from="1558534572387" duration="124000" />
+      <workItem from="1559927589511" duration="3259000" />
+      <workItem from="1560049082953" duration="4356000" />
+      <workItem from="1565238349923" duration="4101000" />
+      <workItem from="1565295496550" duration="63000" />
+      <workItem from="1565631543234" duration="631000" />
+      <workItem from="1565641205997" duration="9000" />
+      <workItem from="1566336925666" duration="2316000" />
+      <workItem from="1571370518809" duration="5156000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/landing/components/LandingSectionContact.vue</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
