@@ -4,174 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="favicon.ico">
-  <title>Sheng Slogar - Web Developer</title>
-  <meta name="theme-color" content="#f5f5f5">
+  <title>Sheng Slogar - Utah Web Developer</title>
+  <meta name="theme-color" content="#f9fdc4">
   <meta name="description" content="Your local Utah expert in WordPress design, custom website design, and advanced SaaS web applications. Learn more.">
-  <style>
-  * {
-    box-sizing : border-box;
-    transition : .2s ease;
-  }
-
-  html {
-    font   : 16px monospace;
-    cursor : default;
-  }
-
-  @keyframes body--entrance {
-    0% {
-      opacity : 0;
-    }
-  }
-
-  body {
-    margin     : 0;
-    padding    : 2rem;
-    background : #f9fdc4;
-    min-width  : 320px;
-    animation  : body--entrance .25s ease;
-  }
-
-  #app {
-    display     : flex;
-    align-items : center;
-  }
-
-  @keyframes app__hero-before--entrance {
-    0% {
-      height : 100%;
-    }
-    70% {
-      height : 60%;
-    }
-  }
-
-  #app__hero::before {
-    content    : "";
-    position   : absolute;
-    bottom     : 0;
-    left       : 0;
-    right      : 0;
-    height     : 0;
-    background : #ffffff;
-    animation  : app__hero-before--entrance 2s steps(20) .25s backwards;
-  }
-
-  #app__hero {
-    position : relative;
-  }
-
-  @keyframes app__hero-img--infinite {
-    50% {
-      border-color : blue;
-    }
-  }
-
-  #app__hero img {
-    width     : 256px;
-    max-width : 100%;
-    border    : 6px dashed #000000;
-    animation : app__hero-img--infinite 1s steps(1) infinite 2s;
-  }
-
-  #app__content {
-    padding   : 3rem;
-    flex      : 0 1 600px;
-    max-width : 100%;
-    overflow  : hidden;
-  }
-
-  #app__header {
-    font-size : 4rem;
-    margin    : 0;
-  }
-
-  #app__subtitle {
-    overflow : hidden;
-    width    : 375px;
-  }
-
-  @keyframes app__subtitle-text--infinite {
-    0% {
-      transform : translateX(80%);
-    }
-
-    100% {
-      transform : translateX(-80%);
-    }
-  }
-
-  #app__subtitle-text {
-    animation   : app__subtitle-text--infinite 8s steps(70) infinite;
-    white-space : nowrap;
-    color       : green;
-    text-align  : center;
-    display     : block;
-  }
-
-  @keyframes app__footer-img--entrance {
-    0% {
-      visibilitY : hidden;
-    }
-  }
-
-  #app__footer-img {
-    animation  : app__footer-img--entrance 0s linear 2s backwards;
-    margin-top : 2rem;
-    max-width  : 100%;
-  }
-
-  @media (max-width : 800px) {
-    #app {
-      flex-direction  : column;
-      justify-content : center;
-      text-align      : center;
-    }
-
-    #app__content {
-      padding : 3rem 0;
-    }
-  }
-  </style>
+  <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
-  <section id="app">
-    <div id="app__hero">
+  <div id="app">
+    <section id="app__hero">
       <img src="static/hero.jpg" alt="Sheng Slogar brushing teeth">
-    </div>
-    <div id="app__content">
+    </section>
+    <section id="app__content">
       <h1 id="app__header">
         Sheng Slogar
       </h1>
       <h5 id="app__subtitle">
         <span id="app__subtitle-text">
-          Software Developer in Utah!
+          Web Developer in Utah!
         </span>
       </h5>
       <div id="app__links">
         <a href="http://twitter.com/shengslogar">Twitter</a>
-
         <a href="http://github.com/shengslogar">GitHub</a>
-
         <a href="http://codepen.io/shengslogar">CodePen</a>
-
         <a href="http://linkedin.com/in/shengslogar">LinkedIn</a>
-
+        <a href="http://blog.shengslogar.com">Blog</a>
+        <a href="http://diglactic.com">Company</a>
         <a href="mailto:sheng@shengslogar.com">Email</a>
       </div>
       <img id="app__footer-img" src="static/apache.png" alt="Powered by Apache">
-    </div>
-  </section>
+    </section>
+  </div>
   <script async src="//www.googletagmanager.com/gtag/js?id=UA-38963765-4"></script>
-  <script>
-  {
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {dataLayer.push(arguments);}
-
-    gtag('js', new Date());
-    gtag('config', 'UA-38963765-4');
-  }
-  </script>
+  <script src="static/script.js"></script>
 </body>
 </html>
