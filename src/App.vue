@@ -1,21 +1,29 @@
 <template>
     <div id="app">
-        TODO
+        <Landing/>
     </div>
 </template>
 
 <script>
+import Landing from './views/Landing';
 
 export default {
-    name: 'App'
+    name: 'App',
+    components: {Landing}
 }
 </script>
 
 <style lang="scss">
-@import 'https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap';
+@import '//fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap';
 
 * {
     box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+    height: 100%;
 }
 
 html {
@@ -24,15 +32,6 @@ html {
 
 body {
     font-size: 0;
-    background: #202328;
-}
-
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    margin: 0;
 }
 </style>
