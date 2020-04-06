@@ -44,7 +44,9 @@ export default {
                 const relX = (pageX - centerX) / centerX;
                 const relY = (pageY - centerY) / centerY;
 
-                this.transform = `rotateX(${-relY * 5}deg) rotateY(${relX * 5}deg)`;
+                this.transform = `rotateX(${-relY * 10}deg) rotateY(${relX * 10}deg)`;
+
+                console.log(this.transform);
             });
         }
     },
@@ -136,11 +138,13 @@ export default {
     }
 
     &-wrapper {
+        perspective: 1000px;
         transition: transform 1s ease;
     }
 
     @media all and (max-width: $width) {
         &-wrapper {
+            // TODO
             // height: 0;
             // transform: rotateZ(90deg);
             // padding: 0 50%;
