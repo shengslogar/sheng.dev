@@ -18,6 +18,7 @@ export default {
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html,
@@ -28,10 +29,10 @@ body,
 
 html {
     font: 16px 'Oxygen', sans-serif;
+    cursor: default;
 }
 
 body {
     font-size: 0;
-    margin: 0;
 }
 </style>

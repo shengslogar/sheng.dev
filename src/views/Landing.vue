@@ -22,5 +22,10 @@ export default {
 .landing {
     min-height: 100%;
     background: #202328;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    perspective: 1000px;
 }
 </style>
