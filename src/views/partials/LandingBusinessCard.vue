@@ -1,22 +1,24 @@
 <template>
-    <div class="landing-business-card"
-         :style="{ transform }">
-        <div class="landing-business-card__embellishment-list">
-            <div class="landing-business-card__embellishment-1"></div>
-            <div class="landing-business-card__embellishment-2"></div>
-            <div class="landing-business-card__embellishment-3"></div>
-        </div>
-        <div class="landing-business-card__info">
-            <h2 class="landing-business-card__name">
-                Sheng<br>
-                Slogar
-            </h2>
-            <div class="landing-business-card__details">
-                Salt Lake City, UT, USA | +1 801 839 4218 | sheng@diglactic.com
+    <div class="landing-business-card-wrapper">
+        <div class="landing-business-card"
+             :style="{ transform }">
+            <div class="landing-business-card__embellishment-list">
+                <div class="landing-business-card__embellishment-1"></div>
+                <div class="landing-business-card__embellishment-2"></div>
+                <div class="landing-business-card__embellishment-3"></div>
             </div>
-        </div>
-        <div class="landing-business-card__occupation">
-            Web Developer
+            <div class="landing-business-card__info">
+                <h2 class="landing-business-card__name">
+                    Sheng<br>
+                    Slogar
+                </h2>
+                <div class="landing-business-card__details">
+                    Salt Lake City, UT, USA | +1 801 839 4218 | sheng@diglactic.com
+                </div>
+            </div>
+            <div class="landing-business-card__occupation">
+                Web Developer
+            </div>
         </div>
     </div>
 </template>
@@ -42,7 +44,7 @@ export default {
                 const relX = (pageX - centerX) / centerX;
                 const relY = (pageY - centerY) / centerY;
 
-                this.transform = `rotateX(${-relY * 10}deg) rotateY(${relX * 10}deg)`;
+                this.transform = `rotateX(${-relY * 5}deg) rotateY(${relX * 5}deg)`;
             });
         }
     },
@@ -54,15 +56,25 @@ export default {
 
 <style lang="scss">
 .landing-business-card {
-    $margin: 1.5rem;
+    $padding: 1.5rem;
+    $width: 525px;
+    $height: 300px;
 
-    width: 525px;
-    height: 300px;
+    width: $width;
+    height: $height;
     background: #fff;
     position: relative;
     border-radius: .25rem;
     backface-visibility: hidden;
     transition: transform .1s linear;
+    animation: landing-business-card--entrance .45s ease;
+
+    @keyframes landing-business-card--entrance {
+        from {
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+    }
 
     &__embellishment {
         &-list {
@@ -97,8 +109,8 @@ export default {
 
     &__info {
         position: absolute;
-        bottom: $margin;
-        left: $margin;
+        bottom: $padding;
+        left: $padding;
     }
 
     &__name {
@@ -117,10 +129,22 @@ export default {
         transform: rotateZ(-90deg);
         transform-origin: 100% 100%;
         position: absolute;
-        bottom: 10rem + $margin;
-        right: $margin;
+        bottom: 10rem + $padding;
+        right: $padding;
         width: 10rem;
         color: #999;
+    }
+
+    &-wrapper {
+        transition: transform 1s ease;
+    }
+
+    @media all and (max-width: $width) {
+        &-wrapper {
+            // height: 0;
+            // transform: rotateZ(90deg);
+            // padding: 0 50%;
+        }
     }
 }
 </style>

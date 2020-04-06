@@ -30,6 +30,7 @@ body,
 html {
     font: 16px 'Oxygen', sans-serif;
     cursor: default;
+    min-width: 320px;
 }
 
 body {
