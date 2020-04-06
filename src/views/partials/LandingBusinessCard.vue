@@ -35,6 +35,7 @@ export default {
         setupMouseLogic() {
             const container = document.body;
 
+            // TODO possibly interact with device motion?
             window.addEventListener('mousemove', ({pageX, pageY}) => {
                 // get center of element in pixels
                 const centerX = container.scrollWidth / 2;
