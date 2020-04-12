@@ -139,6 +139,7 @@ export default {
         bottom: 0;
         overflow: auto;
         padding: 2rem;
+        margin: 0;
         background: rgba(32, 35, 40, .98);
         z-index: 10;
         transition: $transition;
