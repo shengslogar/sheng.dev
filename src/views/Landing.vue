@@ -26,6 +26,5 @@ export default {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-width: min-content;
 }
 </style>

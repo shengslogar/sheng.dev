@@ -1,23 +1,25 @@
 <template>
-    <div class="landing-business-card-wrapper">
-        <div class="landing-business-card"
-             :style="{ transform }">
-            <div class="landing-business-card__embellishment-list">
-                <div class="landing-business-card__embellishment-1"></div>
-                <div class="landing-business-card__embellishment-2"></div>
-                <div class="landing-business-card__embellishment-3"></div>
-            </div>
-            <div class="landing-business-card__info">
-                <h2 class="landing-business-card__name">
-                    Sheng<br>
-                    Slogar
-                </h2>
-                <div class="landing-business-card__details">
-                    Salt Lake City, UT, USA | +1 801 839 4218 | sheng@diglactic.com
+    <div class="landing-business-card-content-wrapper">
+        <div class="landing-business-card-transform-wrapper">
+            <div class="landing-business-card"
+                 :style="{ transform }">
+                <div class="landing-business-card__embellishment-list">
+                    <div class="landing-business-card__embellishment-1"></div>
+                    <div class="landing-business-card__embellishment-2"></div>
+                    <div class="landing-business-card__embellishment-3"></div>
                 </div>
-            </div>
-            <div class="landing-business-card__occupation">
-                Web Developer
+                <div class="landing-business-card__info">
+                    <h2 class="landing-business-card__name">
+                        Sheng<br>
+                        Slogar
+                    </h2>
+                    <div class="landing-business-card__details">
+                        Salt Lake City, UT, USA | +1 801 839 4218 | sheng@diglactic.com
+                    </div>
+                </div>
+                <div class="landing-business-card__occupation">
+                    Web Developer
+                </div>
             </div>
         </div>
     </div>
@@ -46,8 +48,6 @@ export default {
                 const relY = (pageY - centerY) / centerY;
 
                 this.transform = `rotateX(${-relY * 10}deg) rotateY(${relX * 10}deg)`;
-
-                console.log(this.transform);
             });
         }
     },
@@ -138,17 +138,21 @@ export default {
         color: #999;
     }
 
-    &-wrapper {
+    &-transform-wrapper {
         perspective: 1000px;
-        transition: transform 1s ease;
+        transition: transform .2s ease;
     }
 
     @media all and (max-width: $width) {
-        &-wrapper {
-            // TODO
-            // height: 0;
-            // transform: rotateZ(90deg);
-            // padding: 0 50%;
+        &-transform-wrapper {
+            transform: rotateZ(90deg);
+        }
+
+        &-content-wrapper {
+            margin: 6rem 0;
+            width: $height;
+            height: $width;
+            overflow: hidden;
         }
     }
 }

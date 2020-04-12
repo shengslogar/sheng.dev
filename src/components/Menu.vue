@@ -84,17 +84,23 @@ export default {
 
 <style lang="scss">
 .menu {
+    $transition: .2s ease;
+
     &__toggle {
         position: fixed;
         z-index: 11;
         top: 2rem;
         right: 2rem;
-        height: 1.5rem;
-        width: 2rem;
+        height: 3rem;
+        width: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        background: rgba(32, 35, 40, .75);
+        padding: .75rem;
+        transition: $transition;
+        transition-property: background-color;
 
         &::before,
         &::after {
@@ -103,12 +109,14 @@ export default {
             height: .25rem;
             background: #fff;
             display: block;
-            transition: .2s ease;
+            transition: $transition;
             transition-property: transform;
         }
     }
 
     &--open &__toggle {
+        background: none;
+
         &::before {
             transform: translateY(.625rem) rotateZ(-45deg);
         }
@@ -128,7 +136,7 @@ export default {
         padding: 2rem;
         background: rgba(32, 35, 40, .98);
         z-index: 10;
-        transition: .2s ease;
+        transition: $transition;
         transition-property: transform, visibility, opacity;
         pointer-events: none;
         transform: scaleY(1.1);
@@ -149,7 +157,7 @@ export default {
         }
 
         &-list-item {
-            margin: 2rem 0;
+            margin: 4rem 0;
 
             a {
                 font-size: 2rem;
