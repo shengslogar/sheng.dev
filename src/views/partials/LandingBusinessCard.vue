@@ -59,7 +59,6 @@ export default {
         setupMouseLogic() {
             const container = document.body;
 
-            // TODO possibly interact with device motion?
             window.addEventListener('mousemove', ({pageX, pageY}) => {
                 // get center of element in pixels
                 const centerX = container.scrollWidth / 2;
@@ -98,8 +97,12 @@ export default {
     },
     mounted() {
         this.setupResponsiveLogic();
-        this.setupMouseLogic();
         this.setupMotionLogic();
+
+        // don't setup mouse logic on touch devices
+        if (!Object.keys(window).includes('ontouchstart')) {
+            this.setupMouseLogic();
+        }
     }
 };
 </script>
