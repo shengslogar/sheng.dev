@@ -1,8 +1,8 @@
 <template>
     <div class="landing-business-card-content-wrapper">
-        <div class="landing-business-card-transform-wrapper">
-            <div class="landing-business-card"
-                 :style="{ transform }">
+        <div class="landing-business-card-transform-wrapper"
+             :style="{ transform }">
+            <div class="landing-business-card">
                 <div class="landing-business-card__embellishment-list">
                     <div class="landing-business-card__embellishment-1"></div>
                     <div class="landing-business-card__embellishment-2"></div>
@@ -30,10 +30,32 @@ export default {
     name: 'LandingBusinessCard',
     data() {
         return {
-            transform: null
+            motionTransform: {x: 0, y: 0},
+            isMobile: false
         };
     },
+    computed: {
+        transform() {
+            const {x, y} = this.motionTransform;
+            const z = this.isMobile
+                ? 90
+                : 0;
+
+            return `rotateX(${Math.round(x)}deg) rotateY(${Math.round(y)}deg) rotateZ(${z}deg)`;
+        }
+    },
     methods: {
+        setupResponsiveLogic() {
+            const updateLayout = () => {
+                this.isMobile = window.outerWidth <= 525;
+            };
+
+            window.addEventListener('resize', () => {
+                updateLayout();
+            });
+
+            updateLayout();
+        },
         setupMouseLogic() {
             const container = document.body;
 
@@ -47,12 +69,37 @@ export default {
                 const relX = (pageX - centerX) / centerX;
                 const relY = (pageY - centerY) / centerY;
 
-                this.transform = `rotateX(${-relY * 10}deg) rotateY(${relX * 10}deg)`;
+                this.motionTransform = {
+                    x: -relY * 10,
+                    y: relX * 10
+                };
+            });
+        },
+        setupMotionLogic() {
+            // gather orientation at page load
+            let initialOrientation = null;
+
+            window.addEventListener('deviceorientation', ({alpha, beta}) => {
+                if (initialOrientation !== null) {
+                    const movement = {
+                        x: beta - initialOrientation.beta,
+                        y: alpha - initialOrientation.alpha
+                    };
+
+                    this.motionTransform = {
+                        x: -movement.x / 10,
+                        y: movement.y / 10
+                    };
+                } else {
+                    initialOrientation = {alpha, beta};
+                }
             });
         }
     },
     mounted() {
+        this.setupResponsiveLogic();
         this.setupMouseLogic();
+        this.setupMotionLogic();
     }
 };
 </script>
@@ -69,7 +116,6 @@ export default {
     position: relative;
     border-radius: .25rem;
     backface-visibility: hidden;
-    transition: transform .1s linear;
     animation: landing-business-card--entrance .45s ease;
 
     @keyframes landing-business-card--entrance {
@@ -138,21 +184,21 @@ export default {
         color: #999;
     }
 
-    &-transform-wrapper {
+    &-content-wrapper {
         perspective: 1000px;
-        transition: transform .2s ease;
+    }
+
+    &-transform-wrapper {
+        transition: transform .1s linear;
     }
 
     @media all and (max-width: $width) {
-        &-transform-wrapper {
-            transform: rotateZ(90deg);
-        }
+        animation: none;
 
         &-content-wrapper {
             margin: 6rem 0;
             width: $height;
             height: $width;
-            overflow: hidden;
         }
     }
 }

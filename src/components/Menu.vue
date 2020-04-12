@@ -30,6 +30,11 @@ const menuItems = [
         target: '_blank',
     },
     {
+        href: 'tel:+18018394218',
+        label: 'Phone',
+        target: '_self'
+    },
+    {
         href: 'mailto:sheng@diglactic.com',
         label: 'Email',
         target: '_self',
