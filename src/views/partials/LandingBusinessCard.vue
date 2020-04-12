@@ -100,7 +100,7 @@ export default {
         this.setupMotionLogic();
 
         // don't setup mouse logic on touch devices
-        if (!Object.keys(window).includes('ontouchstart')) {
+        if (!('ontouchstart' in window)) {
             this.setupMouseLogic();
         }
     }
