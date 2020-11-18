@@ -2,6 +2,7 @@
     <div :class="['menu', classList]">
         <a href="#"
            class="menu__toggle"
+           aria-label="Toggle navigation menu"
            @click.prevent="handleToggle"></a>
         <div class="menu__drawer"
              @click="handleToggle">
@@ -98,6 +99,7 @@ export default {
         right: 2rem;
         height: 3rem;
         width: 3rem;
+        border-radius: .25rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -106,6 +108,11 @@ export default {
         padding: .75rem;
         transition: $transition;
         transition-property: background-color;
+        outline: none;
+
+        &:focus {
+          background: #000;
+        }
 
         &::before,
         &::after {
@@ -120,8 +127,6 @@ export default {
     }
 
     &--open &__toggle {
-        background: none;
-
         &::before {
             transform: translateY(.625rem) rotateZ(-45deg);
         }
@@ -169,6 +174,11 @@ export default {
                 font-size: 2rem;
                 color: #fff;
                 text-decoration: none;
+                outline: none;
+
+              &:focus {
+                text-decoration: underline;
+              }
             }
         }
     }

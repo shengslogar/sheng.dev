@@ -195,7 +195,7 @@ export default {
         transition: transform .1s linear;
     }
 
-    @media all and (max-width: $width) {
+    @media (max-width: $width) {
         animation: none;
 
         &-content-wrapper {
