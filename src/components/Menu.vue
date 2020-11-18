@@ -25,7 +25,7 @@
 <script>
 const menuItems = [
     {
-        href: 'https://shengslogar.com',
+        href: 'https://blog.shengslogar.com',
         label: 'Blog',
         target: '_blank',
     },
