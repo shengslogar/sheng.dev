@@ -14,7 +14,7 @@
                         Slogar
                     </h2>
                     <div class="landing-business-card__details">
-                        Salt Lake City, UT, USA | +1 801 839 4218 | sheng@diglactic.com
+                        SLC, UT, USA | sheng@diglactic.com
                     </div>
                 </div>
                 <div class="landing-business-card__occupation">
@@ -117,7 +117,7 @@ export default {
     height: $height;
     background: #fff;
     position: relative;
-    border-radius: .25rem;
+    border-radius: .1rem;
     backface-visibility: hidden;
     animation: landing-business-card--entrance .45s ease;
 

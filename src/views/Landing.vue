@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
 .landing {
     min-height: 100%;
-    background: #202328;
+    background: #111;
     display: flex;
     align-items: center;
     justify-content: center;

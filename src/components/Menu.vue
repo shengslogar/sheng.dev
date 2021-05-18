@@ -26,19 +26,19 @@
 <script>
 const menuItems = [
     {
+      href: 'https://diglactic.com',
+      label: 'Company',
+      target: '_blank',
+    },
+    {
         href: 'https://blog.shengslogar.com',
         label: 'Blog',
         target: '_blank',
     },
     {
-        href: 'tel:+18018394218',
-        label: 'Phone',
-        target: '_self'
-    },
-    {
-        href: 'mailto:sheng@diglactic.com',
-        label: 'Email',
-        target: '_self',
+      href: 'https://lintrollerpodcast.com/',
+      label: 'Podcast',
+      target: '_blank',
     },
     {
         href: 'https://linkedin.com/in/shengslogar/',
@@ -51,10 +51,15 @@ const menuItems = [
         target: '_blank',
     },
     {
-        href: 'https://diglactic.com',
-        label: 'Company',
-        target: '_blank',
-    }
+      href: 'https://www.instagram.com/shengslogar',
+      label: 'Instagram',
+      target: '_blank',
+    },
+    {
+      href: 'mailto:sheng@diglactic.com',
+      label: 'Email',
+      target: '_self',
+    },
 ];
 
 export default {
